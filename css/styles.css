@@ -29,7 +29,46 @@ body {
 }
 
 .container {
-  margin: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header"
+    "ratings"
+    "comments";
+}
+
+.page-header {
+  grid-area: header;
+  margin: 0 1em 0;
+  background-image: url(/images/bg-pattern-top-mobile.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.title > h1 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: var(--clr-very-dark-magenta);
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+.slogan {
+  color: var(--clr-soft-pink);
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.ratings {
+  grid-area: ratings;
+}
+
+.buyer-comments {
+  grid-area: comments;
 }
