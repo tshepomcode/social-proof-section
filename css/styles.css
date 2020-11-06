@@ -45,11 +45,13 @@ body {
   background-image: url(/images/bg-pattern-top-mobile.svg);
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-bottom: 2em;
 }
 
 
 .title > h1 {
-  margin-top: 2em;
+  padding-top: 2em;
+  /* margin-top: 2em; */
   margin-bottom: 0.5em;
   color: var(--clr-very-dark-magenta);
   text-align: center;
@@ -64,6 +66,8 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
+
+
 
 .ratings {
   grid-area: ratings;
