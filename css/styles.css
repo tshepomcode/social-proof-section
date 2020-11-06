@@ -48,7 +48,6 @@ body {
   margin-bottom: 2em;
 }
 
-
 .title > h1 {
   padding-top: 2em;
   /* margin-top: 2em; */
@@ -67,10 +66,13 @@ body {
   line-height: 1.5;
 }
 
-
-
 .ratings {
   grid-area: ratings;
+  margin: 0 1em 2em;
+}
+
+.rating-card{
+  margin-bottom: 1em;
 }
 
 .buyer-comments {
