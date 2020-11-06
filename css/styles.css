@@ -49,7 +49,7 @@ body {
 }
 
 .title > h1 {
-  padding-top: 2em;
+  padding-top: 2.5em;
   /* margin-top: 2em; */
   margin-bottom: 0.5em;
   color: var(--clr-very-dark-magenta);
@@ -68,11 +68,26 @@ body {
 
 .ratings {
   grid-area: ratings;
-  margin: 0 1em 2em;
+  margin: 0 2em 2em;
 }
 
 .rating-card{
   margin-bottom: 1em;
+  background-color: var(--clr-light-grayish-magenta);
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.stars {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.rated {
+  font-size: small;
+  font-weight: bold;
+  color: var(--clr-very-dark-magenta);
+  text-align: center;
 }
 
 .buyer-comments {
