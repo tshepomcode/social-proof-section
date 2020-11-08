@@ -92,4 +92,12 @@ body {
 
 .buyer-comments {
   grid-area: comments;
+  margin: 0 2em 2em;
+}
+
+.buyer-card {
+  margin-bottom: 1em;
+  background-color: var(--clr-very-dark-magenta);
+  border-radius: 10px 10px 10px 10px;
+  padding: 2em;
 }
