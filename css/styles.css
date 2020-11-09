@@ -39,6 +39,18 @@ body {
     "comments";
 }
 
+@media (min-width: 96em) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "header header header ratings ratings ratings"
+      "comments comments comments comments comments comments";
+  }
+}
+
 .page-header {
   grid-area: header;
   margin: 0 1em 0;
@@ -46,6 +58,12 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   margin-bottom: 2em;
+}
+
+@media (min-width: 96em) {
+  .page-header {
+    grid-area: header;
+  }
 }
 
 .title > h1 {
@@ -69,6 +87,12 @@ body {
 .ratings {
   grid-area: ratings;
   margin: 0 2em 2em;
+}
+
+@media (min-width: 96em) {
+  .ratings {
+    grid-area: ratings;
+  }
 }
 
 .rating-card{
@@ -95,9 +119,49 @@ body {
   margin: 0 2em 2em;
 }
 
+@media (min-width: 96em) {
+  .buyer-comments {
+    grid-area: comments;
+  }
+}
+
 .buyer-card {
   margin-bottom: 1em;
-  background-color: var(--clr-very-dark-magenta);
-  border-radius: 10px 10px 10px 10px;
+  background: var(--clr-very-dark-magenta);
+  border-radius: 10px;
   padding: 2em;
 }
+.buyer-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.buyer-image {
+  margin-right: 1em;
+  border-radius: 50%;
+  width: 3em;
+
+}
+.profile-description > h5 {
+  color: var(--clr-white);
+  margin-bottom: .2em;
+}
+
+.verified {
+  color: var(--clr-soft-pink);
+  font-size: small;
+}
+
+.buyer-comment {
+  color: var(--clr-white);
+  font-size: small;
+  font-weight: 500;
+}
+
+/* @media (min-width: 96em){
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+  }
+} */
