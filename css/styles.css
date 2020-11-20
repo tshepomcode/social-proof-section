@@ -28,6 +28,14 @@ body {
   font-family: var(--main-font);
 }
 
+@media screen and (min-width: 40em) {
+  body {
+    background: url(/images/bg-pattern-top-desktop.svg) no-repeat,
+    url(/images/bg-pattern-bottom-desktop.svg) repeat-y;
+    max-width: 96em;
+  }
+}
+
 .container {
   display: grid;
   height: 100vh;
@@ -39,10 +47,13 @@ body {
     "comments";
 }
 
-@media (min-width: 96em) {
+@media screen and (min-width: 40em) {
   .container {
+    margin: 0 auto;
     display: grid;
+    /* max-width: 96em; */
     height: 100vh;
+    background-repeat: no-repeat;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -60,9 +71,10 @@ body {
   margin-bottom: 2em;
 }
 
-@media (min-width: 96em) {
+@media screen and (min-width: 40em) {
   .page-header {
     grid-area: header;
+    background-image: none;
   }
 }
 
@@ -89,7 +101,7 @@ body {
   margin: 0 2em 2em;
 }
 
-@media (min-width: 96em) {
+@media screen and (min-width: 40em) {
   .ratings {
     grid-area: ratings;
   }
@@ -119,7 +131,7 @@ body {
   margin: 0 2em 2em;
 }
 
-@media (min-width: 96em) {
+@media screen and (min-width: 40em) {
   .buyer-comments {
     grid-area: comments;
   }
